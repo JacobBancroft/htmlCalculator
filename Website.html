@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>calculator</title>
+		<style>
+		.calcDivs{
+
+				position: absolute;
+				width: 280px;
+				display: grid;
+				grid-template-columns: auto auto auto auto;
+				top: 174px;
+				left: 258px;
+				text-align: center;
+				height: 66px;
+				z-index: 5;
+				padding: 10px;
+				border-bottom:5px solid black;
+			}
+		.wrapper {
+		  display: block;
+		  position: absolute;
+		  padding: 10px;
+		  width: 670px;
+		  height: 410px;
+		  top: 250px;
+		}
+		.grid-container {
+		  display: grid;
+		  position: absolute;
+		  grid-template-columns: 100px 100px 100px;
+		  padding-left: 10px;
+		  padding-bottom:10px;
+		  width: 300px;
+		  left:250px;
+		  background-color:blue;
+
+		}
+		.operators {
+		  position: absolute;
+		  display: grid;
+		  grid-template-columns: 100px;
+		  padding: 10px;
+		  width: 100px;
+		  left: 550px;
+		  top:-76px;
+		  background-color:red;
+		  padding-left: 0px;
+		  
+		}
+		.grid-item {
+		  background-color: rgba(255, 255, 255, 0.8);
+		  border: 1px solid rgba(0, 0, 0, 0.8);
+		  padding: 20px;
+		  /*margin: 20px;*/
+		  font-size: 30px;
+		  text-align: center;
+		}
+		.number, .sig{
+			position: relative;
+			text-align: center;
+			padding: none;
+			top: 60px;
+
+
+
+
+		}
+		</style>
+		
+	</head>
+	<body>
+
+		<h1>Grid Elements</h1>
+
+		<p>A Grid Layout must have a parent element with the <em>display</em> property set to <em>grid</em> or <em>inline-grid</em>.</p>
+
+		<p>Direct child element(s) of the grid container automatically becomes grid items.</p>
+		<div class="calcDivs">
+		<div id="first" class="number">0</div>
+		<div id="sign" class="sig">?</div>
+		<div id="second" class="number">0</div>
+		<div id="answer" class="number">ans</div>
+		</div>
+		<div class="wrapper">
+		<div class="grid-container">
+		  <div class="grid-item">1</div>
+		  <div class="grid-item">2</div>
+		  <div class="grid-item">3</div>  
+		  <div class="grid-item">4</div>
+		  <div class="grid-item">5</div>
+		  <div class="grid-item">6</div>  
+		  <div class="grid-item">7</div>
+		  <div class="grid-item">8</div>
+		  <div class="grid-item">9</div>   
+		  <div class="grid-item">&nbsp;</div>
+		  <div class="grid-item">0</div>
+		  <div class="grid-item">Clear</div>  
+		</div>
+		<div class="operators">
+		  <div class="grid-item">+</div>
+		  <div class="grid-item">-</div>
+		  <div class="grid-item">*</div>
+		  <div class="grid-item">/</div>
+		  <div class="grid-item">=</div>
+		</div>
+	</div>
+
+	</body>
+</html> 
